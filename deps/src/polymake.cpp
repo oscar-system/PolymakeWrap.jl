@@ -46,6 +46,8 @@ JLCXX_MODULE define_module_polymake(jlcxx::Module& polymake)
 
     polymake_module_add_array_polynomial(polymake, array_type);
 
+    polymake_module_add_map(polymake);
+
     polymake.method("initialize_polymake", &initialize_polymake);
     polymake.method("application", [](const std::string x) {
         data.main_polymake_session->set_application(x);

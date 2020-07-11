@@ -23,5 +23,6 @@ void polymake_module_add_sparsevector(jlcxx::Module& polymake);
 void polymake_module_add_tropicalnumber(jlcxx::Module& polymake);
 void polymake_module_add_type_translations(jlcxx::Module&);
 void polymake_module_add_vector(jlcxx::Module& polymake);
+void polymake_module_add_map(jlcxx::Module& polymake);
 
 #endif

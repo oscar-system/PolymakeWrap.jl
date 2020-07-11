@@ -142,8 +142,11 @@ include("arrays.jl")
 include("incidencematrix.jl")
 include("tropicalnumber.jl")
 include("polynomial.jl")
+include("map.jl")
 
 include("polymake_direct_calls.jl")
 
 include("generate_applications.jl")
+
+include("polydb.jl")
 end # of module Polymake

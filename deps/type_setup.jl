@@ -252,6 +252,12 @@ type_tuples = let NT = NamedTuple{(:type_string, :ctype, :jltype, :convert_f)}
             "Polynomial{Float64,CxxWrap.CxxLong}",
             "to_polynomial_double_int",
         ),
+        (
+            "Map_String_String",
+            "pm::Map<std::string,std::string>",
+            "Map{String,String}",
+            "to_map_string_string"
+        ),
     ]
     NT.(type_tuples)
 end
