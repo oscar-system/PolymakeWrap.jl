@@ -67,4 +67,14 @@ template <typename T> struct WrappedStdListIterator {
     }
 };
 
+template <typename S, typename T> struct WrappedMapIterator {
+    typename pm::Map<S,T>::const_iterator iterator;
+    using key_type = S;
+    using mapped_type = T;
+    WrappedMapIterator<S,T>(const pm::Map<S,T>& M)
+    {
+        iterator = M.begin();
+    }
+};
+
 #endif
