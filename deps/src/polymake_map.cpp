@@ -58,7 +58,7 @@ void polymake_module_add_map(jlcxx::Module& polymake)
                 });
                 wrapped.method("get_element", [](WrappedMapIter& state) {
                     auto elt = *(state.iterator);
-                    return std::tuple<keyT, valT>(elt);
+                    return std::tuple<keyT, valT>(elt.first, elt.second);
                 });
                 wrapped.method("isdone", [](pm::Map<keyT, valT>& M,
                                             WrappedMapIter&    state) {
