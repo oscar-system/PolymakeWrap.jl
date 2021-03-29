@@ -167,6 +167,7 @@ include("incidencematrix.jl")
 include("tropicalnumber.jl")
 include("polynomial.jl")
 include("map.jl")
+include("graphs.jl")
 
 include("polymake_direct_calls.jl")
 
