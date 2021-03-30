@@ -1,16 +1,3 @@
-export nv, ne, vertices, edges, has_vertex, has_edge, inneighbors, outneighbors
-
-### Basic characteristics
-
-function nv(g::Graph{T}) where {T}
-    return Polymake.nv(g)
-end
-
-function ne(g::Graph{T}) where {T}
-    return Polymake.ne(g)
-end
-
-
 ### Check for edges and nodes with index shift
 
 function has_edge(g::Graph{T}, s::Int64, d::Int64) where {T}
